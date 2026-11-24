@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburgueria João Victor Favato Magalhães</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="cabecalho-espaco"></div> 
+  
+  <div class="logo">
+    <span class="marca-icone">🍔</span>
+    <span class="marca-nome">JOÃO VICTOR <span class="destaque">FAVATO BURGUER</span></span>
+  </div>
+
+  <div class="carrinho-icone" id="carrinho-botao">
+    <span class="simbolo-carrinho">🛒</span>
+    <span class="contador-carrinho">0</span>
+  </div>
+</header>
+
+  <div class="container-seletor-unidade">
+    <label for="seletor-unidade">📍 Unidade:</label>
+    <select id="seletor-unidade" class="seletor-unidade">
+      <option value="centro">Unidade Centro - Av. Paraguaçu, 22.</option>
+      <option value="Vila">Unidade Vila - Av. Fernão Dias, 17.</option>
+    </select>
+  </div>
+
+  <nav class="menu-navegacao">
+    <button class="botao-aba ativo">Cardápio</button>
+    <button class="botao-aba">Status</button>
+    <button class="botao-aba">Fidelidade</button>
+  </nav>
+
+  <main class="conteudo-principal">
+    
+    <section id="aba-cardapio" class="conteudo-aba ativo">
+      <h2>Cardápio de Hambúrgueres</h2>
+      
+      <div class="grade-cardapio">
+        <article class="cartao-produto">
+          <div class="informacao-produto">
+            <h3>X-Burger</h3>
+            <p>Pão brioche, Hambúrguer artesanal 180g, queijo cheddar, alface, tomate e molho da casa.</p>
+            <span class="preco">R$ 30,00</span>
+          </div>
+          <button class="adicionar-botao">Adicionar</button>
+        </article>
+
+        <article class="cartao-produto">
+          <div class="informacao-produto">
+            <h3>X-Bacon</h3>
+            <p>Pão brioche, Hambúrguer artesanal 180g, queijo cheddar duplo e muito bacon crocante.</p>
+            <span class="preco">R$ 34,00</span>
+          </div>
+          <button class="adicionar-botao">Adicionar</button>
+        </article>
+
+        <article class="cartao-produto">
+          <div class="informacao-produto">
+            <h3>X-Calabreza</h3>
+            <p>Pão brioche, Hambúrguer artesanal 180g, queijo mussarela, calabreza, alface, tomate e molho da casa.</p>
+            <span class="preco">R$ 36,00</span>
+          </div>
+          <button class="adicionar-botao">Adicionar</button>
+        </article>
+
+        <article class="cartao-produto">
+          <div class="informacao-produto">
+            <h3>X-Frango</h3>
+            <p>Pão brioche, Hambúrguer artesanal 180g, queijo cheddar, frango, alface, tomate e molho da casa.</p>
+            <span class="preco">R$ 36,00</span>
+          </div>
+          <button class="adicionar-botao">Adicionar</button>
+        </article>
+      </div>  
+        
+        <h2>Acompanhamentos</h2>
+        <div class="grade-cardapio">
+          
+          <article class="cartao-produto">
+            <div class="informacao-produto">
+              <h3>Batata frita</h3>
+              <span class="preco">R$ 18,00</span>
+            </div>
+            <button class="adicionar-botao">Adicionar</button>
+          </article>
+
+          <article class="cartao-produto">
+            <div class="informacao-produto">
+              <h3>Anel de Cebola Empanado</h3>
+              <span class="preco">R$ 22,00</span>
+            </div>
+            <button class="adicionar-botao">Adicionar</button>
+          </article>
+        </div>
+      
+    <h2>Bebidas</h2>
+    <div class="grade-cardapio">
+  
+      <article class="cartao-produto">
+        <div class="informacao-produto">
+          <h3>Coca-Cola Zero 350ml</h3>
+          <p>Refrigerante lata.</p>
+          <span class="preco">R$ 6,00</span>
+        </div>
+        <button class="adicionar-botao">Adicionar</button>
+      </article>
+
+      <article class="cartao-produto">
+        <div class="informacao-produto">
+          <h3>Água Mineral 500ml</h3>
+          <p>Água mineral sem gás.</p>
+          <span class="preco">R$ 4,50</span>
+        </div>
+        <button class="adicionar-botao">Adicionar</button>
+      </article>
+
+      <article class="cartao-produto">
+        <div class="informacao-produto">
+          <h3>Suco Integral</h3>
+          <p>Laranja ou Uva, Garrafinha 500ml.</p>
+          <span class="preco">R$ 8,00</span>
+        </div>
+        <button class="adicionar-botao">Adicionar</button>
+      </article>
+
+       <article class="cartao-produto">
+        <div class="informacao-produto">
+          <h3>Água Mineral com Gás 500ml</h3>
+          <span class="preco">R$ 5,00</span>
+        </div>
+        <button class="adicionar-botao">Adicionar</button>
+      </article>
+
+    </div>
+    </section>
+
+    <section id="aba-status" class="conteudo-aba">
+      <h2>Acompanhar Pedido</h2>
+      <div class="caixa-status">
+        <p id="mensagem-status">Não consta pedido em andamento no momento.</p>
+        <div class="linha-tempo">
+          <div class="etapa etapa-1 ativo">1. Recebido</div>
+          <div class="etapa etapa-2">2. Em Preparo</div>
+          <div class="etapa etapa-3">3. Saiu para Entrega</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aba-fidelidade" class="conteudo-aba">
+      <h2>Programa de Fidelidade</h2>
+      <div class="caixa-fidelidade">
+        <p>Cada R$ 1,00 em compras equivale a <strong>1 Ponto</strong>!</p>
+        <div class="cartao-pontos">
+          <span>Seus Pontos Acumulados:</span>
+          <h1 id="pontos-usuario">0</h1>
+        </div>
+        <p class="informacao-fidelidade">Acumule 250 pontos para ganhar R$ 9,00 de desconto no seu próximo pedido.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="painel-carrinho" class="painel-carrinho">
+    <div class="conteudo-carrinho">
+      <div class="cabecalho-carrinho">
+        <h2>Seu Pedido</h2>
+        <button id="fechar-carrinho" class="botao-fechar">&times;</button>
+      </div>
+
+      <div id="itens-carrinho" class="itens-carrinho">
+        <p class="mensagem-carrinho-vazio">O seu carrinho ainda está vazio.</p>
+      </div>
+
+      <form id="formulario-pedido" class="rodape-carrinho">
+        <div class="secao-pagamento" style="margin-bottom: 15px;">
+          <label for="nome-cliente" style="display:block; margin-bottom: 5px;"><strong>Seu Nome:</strong></label>
+          <input type="text" id="nome-cliente" placeholder="Digite seu nome" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+
+          <label for="forma-pagamento" style="display:block; margin-bottom: 5px;"><strong>Formas de Pagamento:</strong></label>
+          <select id="forma-pagamento" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="pix">Pix (Aprovação Instantânea)</option>
+            <option value="cartao-credito-debito">Cartão de Crédito/Debito</option>
+          </select>
+        </div>
+
+        <div class="total-carrinho">
+          <span>Total:</span>
+          <strong id="preco-total-carrinho">R$ 0,00</strong>
+        </div>
+        <button type="submit" id="botao-finalizar" class="botao-finalizar">Finalizar Pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="banner-lgpd" class="banner-lgpd">
+    <div class="conteudo-lgpd">
+      <p>
+        Utilizamos dados como a sua localização e seu CPF apenas para processar o pedidos e inserir os pontos do programa de fidelidade, de acordo com a lei <strong>LGPD</strong>.
+      </p>
+      <div class="acoes-lgpd">
+        <button id="aceitar-lgpd" class="botao-aceitar">Aceitar e Continuar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <p>📍João Victor Favato  Hamburgueria- Paraguaçu Paulista, SP</p>
+  </footer>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
